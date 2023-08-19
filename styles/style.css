@@ -14,6 +14,7 @@ main {
 
 hr {
     border: 1px solid #D1D1D1;
+    margin-bottom: 20px;
 }
 
 .container {
@@ -55,4 +56,41 @@ hr {
     margin-left: 16px;
     font-size: 18px;
     font-weight: 500;
+}
+
+/* Top-blogs styles */
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 26px;
+    grid-column-gap: 10px;
+}
+
+.blog .thubnail img {
+    width: 177px;
+    height: 117px;
+}
+
+.blog {
+    display: flex;
+}
+
+.blog-info {
+    margin-left: 20px;
+}
+
+.blog-title {
+    font-size: 20px;
+}
+
+.blog-author {
+    color: rgb(126, 122, 122);
+    font-size: 16px;
+}
+
+.blog-author a {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(92, 94, 228);
+    font-weight: 500em;
 }
