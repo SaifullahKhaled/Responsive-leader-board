@@ -100,14 +100,16 @@ hr {
 }
 
 /* -------------Courses--------------- */
-.courses{
+.courses {
     display: flex;
     justify-content: space-between;
 }
-.courses .course{
-    background-color:white;
+
+.courses .course {
+    background-color: white;
     border-radius: 10px;
 }
+
 .course-info {
     display: flex;
     align-items: center;
@@ -130,8 +132,59 @@ hr {
 .fa-star {
     color: #8a8988;
 }
-.course-info .course-duration{
+
+.course-info .course-duration {
     background-color: rgb(248, 195, 203);
     border-radius: 20px;
     padding: 0px 10px;
+}
+
+/* Footer */
+footer p {
+    text-align: center;
+}
+
+/*----------------
+   Media Queries 
+-----------------*/
+
+/* Mobile Devices */
+@media screen and (max-width:688px) {
+    .container {
+        width: 100%;
+    }
+
+    .section-title {
+        text-align: center;
+    }
+
+    .players, .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player, .blog, .courses {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Tablet Devices */
+@media screen and (min-width:688px)and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+
+    .section-title {
+        text-align: center;
+    }
+
+    .players, .blogs, .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .player, .blog, .courses {
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
